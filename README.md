@@ -1,8 +1,8 @@
 <img src="icta.png" alt="icta" style=auto/>
 
-## An automatic machine learning based customer segmentation model with RFM analysis ICTA 2024
+# An automatic machine learning based customer segmentation model with RFM analysis ICTA 2024
 
-### 1. Install Hadoop and Spark
+## 1. Install Hadoop and Spark
 
 First, you need install Hadoop and Spark tools. Follow the two installation instructions below:
 
@@ -11,23 +11,23 @@ First, you need install Hadoop and Spark tools. Follow the two installation inst
 + [How to Install Spark on Ubuntu](https://medium.com/@redswitches/how-to-install-spark-on-ubuntu-965266d290d6)
 
 
-### 2. Environments settings
-#### 2.1 Create environments
+## 2. Environments settings
+### 2.1 Create environments
 
 Create virtual environments to ensure that libraries between applications do not conflict.You can create virtual environments anywhere you want. Using `python` for Window or `python3` for Linux.
 
 ```bash
 $ python3 -m venv customer_segmentation_project
 ```
-#### 2.2 Download source code
+### 2.2 Download source code
 Download repo from github to local.
 
 ```bash
 $ git clone https://github.com/nthaihoc/segmentation-customer-hadoop-spark-mlops-icta-2024.git
 ```
 
-### 3. Start application
-#### 3.1 Directory structure
+## 3. Start application
+### 3.1 Directory structure
 
 <img src="folder_structure.png" alt="folder structure" style=auto/>
 
@@ -39,7 +39,7 @@ There are some important files as `artifacts`, `src` and `dvc.yaml`.
 
 See more infomation about `dvc`: https://dvc.org/
 
-#### 3.2 Run pipeline
+### 3.2 Run pipeline
 
 After successfully installing all the above steps, run the following command to start testing the application.
 ```bash
