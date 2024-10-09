@@ -1,0 +1,9 @@
+pandas
+numpy==1.26.4
+pyspark
+scikit-learn 
+scipy
+-e .
+yellowbrick
+pillow
+dvc

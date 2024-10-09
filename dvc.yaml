@@ -1,0 +1,39 @@
+stages:
+  start-hadoop:
+    cmd:
+      - start-dfs.sh
+      - start-yarn.sh
+  
+  start-spark:
+    cmd:
+      - start-master.sh
+
+  install_library:
+    cmd:
+      - pip3 install -r ~/project-icta/project-test/requirement.txt --break-system-packages
+  
+  ingestion_data:
+    cmd:
+      - cd ~/project-icta/project-test/
+      - python3 src/icta/pipeline/stage_01_ingestion_data.py
+
+    deps:
+      - src/icta/pipeline/stage_01_ingestion_data.py
+      - src/icta/components/ingestion_data.py
+    
+    outs:
+      - datasets/rfm-customer.csv
+
+  put_data_hdfs:
+    cmd:
+      - cd ~/hadoop && bin/hdfs dfs -put -f ~/project-icta/project-test/datasets/rfm-customer.csv /nthaihoc/data
+
+  train_and_evaluate_model:
+    cmd:
+      - cd ~
+      - spark-submit --master yarn --deploy-mode client main.py
+
+    deps:
+      - src/icta/components/spark_session.py
+      - src/icta/components/train_model.py
+      - src/icta/components/evaluate_model.py
