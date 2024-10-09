@@ -1,42 +1,51 @@
+<img src="icta.png" alt="MarineGEO circle logo" style=auto/>
+
 ## An automatic machine learning based customer segmentation model with RFM analysis ICTA 2024
+---
 
 ### 1. Install Hadoop and Spark
+First, you need install Hadoop and Spark tools. Follow the two installation instructions below:
 
-* Follow the two installation instructions below:
-    + [Installing latest Hadoop 3.4 on Ubuntu 2024](https://medium.com/@nsidana123/installing-latest-hadoop-3-4-on-ubuntu-2024-easy-installation-guide-874f889fede7)
-    + [How to Install Spark on Ubuntu](https://medium.com/@redswitches/how-to-install-spark-on-ubuntu-965266d290d6)
++ [Installing latest Hadoop 3.4 on Ubuntu 2024](https://medium.com/@nsidana123/installing-latest-hadoop-3-4-on-ubuntu-2024-easy-installation-guide-874f889fede7)
 
++ [How to Install Spark on Ubuntu](https://medium.com/@redswitches/how-to-install-spark-on-ubuntu-965266d290d6)
+
+---
 ### 2. Environments settings
+#### 2.1 Create environments
 
-* Download repo from github to local:
-```bash
-$git clone https://github.com/nthaihoc/segmentation-customer-hadoop-spark-mlops-icta2024.git
-```
-* Install library necessary in requirements file. Before installing, make sure you are inside the folder containing the `requirement` file. Using `pip` for Window or `pip3` for Linux:
+Create virtual environments to ensure that libraries between applications do not conflict.You can create virtual environments anywhere you want. Using `python` for Window or `python3` for Linux.
 
 ```bash
-$pip3 install -r requirements
+$ python3 -m venv customer_segmentation_project
 ```
+#### 2.2 Download source code
+Download repo from github to local.
 
-### 3. Run Application
-
-* Start `namenode`, `datanode` and `yarn`:
 ```bash
-$start-dfs.sh
-$start-yarn.sh
+$ git clone https://github.com/nthaihoc/segmentation-customer-hadoop-spark-mlops-icta-2024.git
 ```
+---
+### 3. Start application
+#### 3.1 Directory structure
 
-* Then start `master` and `worker` on Spark:
+<img src="folder_structure.png" alt="MarineGEO circle logo" style=auto/>
+
+There are some important files as `artifacts`, `src` and `dvc.yaml`.
+
++ `artifact` include model and results file
++ `src` include source code of application
++ `dvc.yaml` is a configuration file, supporting automatic command line execution, for building and managing pipelines
+
+See more infomation about `dvc`: https://dvc.org/
+
+#### 3.2 Run pipeline
+
+After successfully installing all the above steps, run the following command to start testing the application.
 ```bash
-$start-master.sh
-$start-worker.sh
+$ source customer_segmentation_project/bin/activate
+$ cd customer_segmentation_project
+$ cd segmentation-customer-hadoop-spark-mlops-icta-2024
+$ dvc repro
 ```
-
-* Run pipeline
-```bash
-$spark-submit --master yarn \
-              --deploy-mode client \
-              segmentation-customer-hadoop-spark-mlops-icta2024/main.py 
-```
-
 ---
