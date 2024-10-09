@@ -2,6 +2,10 @@
 
 # An automatic machine learning based customer segmentation model with RFM analysis ICTA 2024
 
+* Introduction about ICTA conference: https://icta.hvu.edu.vn/
+
+* Link paper: 
+
 ## 1. Install Hadoop and Spark
 
 First, you need install Hadoop and Spark tools. Follow the two installation instructions below:
