@@ -3,7 +3,6 @@
 ## An automatic machine learning based customer segmentation model with RFM analysis ICTA 2024
 
 ### 1. Install Hadoop and Spark
-___
 
 First, you need install Hadoop and Spark tools. Follow the two installation instructions below:
 
@@ -13,7 +12,6 @@ First, you need install Hadoop and Spark tools. Follow the two installation inst
 
 
 ### 2. Environments settings
-___
 #### 2.1 Create environments
 
 Create virtual environments to ensure that libraries between applications do not conflict.You can create virtual environments anywhere you want. Using `python` for Window or `python3` for Linux.
@@ -29,7 +27,6 @@ $ git clone https://github.com/nthaihoc/segmentation-customer-hadoop-spark-mlops
 ```
 
 ### 3. Start application
-___
 #### 3.1 Directory structure
 
 <img src="folder_structure.png" alt="folder structure" style=auto/>
