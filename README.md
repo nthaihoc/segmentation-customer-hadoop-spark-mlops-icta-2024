@@ -1,4 +1,4 @@
-<img src="icta.png" alt="MarineGEO circle logo" style=auto/>
+<img src="icta.png" alt="icta" style=auto/>
 
 ## An automatic machine learning based customer segmentation model with RFM analysis ICTA 2024
 ---
@@ -29,7 +29,7 @@ $ git clone https://github.com/nthaihoc/segmentation-customer-hadoop-spark-mlops
 ### 3. Start application
 #### 3.1 Directory structure
 
-<img src="folder_structure.png" alt="MarineGEO circle logo" style=auto/>
+<img src="folder_structure.png" alt="folder structure" style=auto/>
 
 There are some important files as `artifacts`, `src` and `dvc.yaml`.
 
