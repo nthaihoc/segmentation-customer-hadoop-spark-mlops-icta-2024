@@ -32,7 +32,6 @@ class PrepareData:
             Calculate rfm values
         """
         data = df.dropna(subset=["CustomerID"], axis=0)
-        
         data["InvoiceDate"] = pd.to_datetime(data["InvoiceDate"], errors="coerce")
         current_date = max(data["InvoiceDate"]) + datetime.timedelta(days=1)
         data["TotalPay"] = data["Quantity"] * data["UnitPrice"]
@@ -42,7 +41,7 @@ class PrepareData:
             'TotalPay':'sum'
             }
         )
-
+        
         customer_seg_df.rename(columns={"InvoiceDate": "Recency", 
                                         "InvoiceNo": "Frequency", 
                                         "TotalPay": "Monetary"}, inplace=True)

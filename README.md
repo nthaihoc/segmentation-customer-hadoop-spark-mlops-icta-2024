@@ -1,6 +1,6 @@
 <img src="icta.png" alt="icta" style=auto/>
 
-# An automatic machine learning based customer segmentation model with RFM analysis ICTA 2024
+# An automatic machine learning based customer segmentation model with RFM analysis at ICTA conference 2024
 
 * *Information about ICTA conference:* *https://icta.hvu.edu.vn/*
 
