@@ -24,9 +24,10 @@ stages:
     outs:
       - datasets/rfm-customer.csv
 
-  put_data_hdfs:
+  create_and_put_data:
     cmd:
-      - cd ~/hadoop && bin/hdfs dfs -put -f ~/project-icta/project-test/datasets/rfm-customer.csv /nthaihoc/data
+      - cd ~hadoop && bin/hdfs dfs -mkdir /nthaihoc/data
+      - bin/hdfs dfs -put -f ~/project-icta/project-test/datasets/rfm-customer.csv /nthaihoc/data
 
   train_and_evaluate_model:
     cmd:

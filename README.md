@@ -2,11 +2,13 @@
 
 # An automatic machine learning based customer segmentation model with RFM analysis ICTA 2024
 
-* Introduction about ICTA conference: https://icta.hvu.edu.vn/
+* *Introduction about ICTA conference:* *https://icta.hvu.edu.vn/*
 
-* Link paper: 
+* *Link paper:* 
 
-## 1. Install Hadoop and Spark
+* *Link datasets:*
+
+## Install Hadoop and Spark
 
 First, you need install Hadoop and Spark tools. Follow the two installation instructions below:
 
@@ -15,25 +17,33 @@ First, you need install Hadoop and Spark tools. Follow the two installation inst
 + [How to Install Spark on Ubuntu](https://medium.com/@redswitches/how-to-install-spark-on-ubuntu-965266d290d6)
 
 
-## 2. Environments settings
-### 2.1 Create environments
+## Environments Setup
+### 1. Create Environments
 
 Create virtual environments to ensure that libraries between applications do not conflict.You can create virtual environments anywhere you want. Using `python` for Window or `python3` for Linux.
 
 ```bash
-$ python3 -m venv customer_segmentation_project
+$ python3 -m venv demo-project
+$ cd demo-project
+$ source bin/activate
 ```
-### 2.2 Download source code
-Download repo from github to local.
+### 2. Download Source Code
+Download repo from github to local using command:
 
 ```bash
 $ git clone https://github.com/nthaihoc/segmentation-customer-hadoop-spark-mlops-icta-2024.git
 ```
 
-## 3. Start application
-### 3.1 Directory structure
+### 3. Install Library Dependencies 
 
-<img src="folder_structure.png" alt="folder structure" style=auto/>
+You need to install the necessary libraries to manage and run the application. Using `pip` for Window or `pip3` for Linux.
+
+```bash
+$ cd segmentation-customer-hadoop-spark-mlops-icta-2024
+$ pip3 install -r requirements.txt
+```
+
+### 4. Folder Structure
 
 There are some important files as `artifacts`, `src` and `dvc.yaml`.
 
@@ -43,13 +53,16 @@ There are some important files as `artifacts`, `src` and `dvc.yaml`.
 
 See more infomation about `dvc`: https://dvc.org/
 
-### 3.2 Run pipeline
+<div style="text-align: center;">
+    <img src="folder_structure.png" alt="folder structure" style="auto;" />
+</div>
+
+### 5. Start Pipeline
 
 After successfully installing all the above steps, run the following command to start testing the application.
+
 ```bash
-$ source customer_segmentation_project/bin/activate
-$ cd customer_segmentation_project
-$ cd segmentation-customer-hadoop-spark-mlops-icta-2024
 $ dvc repro
 ```
----
+
+## Materials
