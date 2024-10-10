@@ -2,11 +2,11 @@
 
 # An automatic machine learning based customer segmentation model with RFM analysis at ICTA conference 2024
 
-* *Information about ICTA conference:* *https://icta.hvu.edu.vn/*
+* *Information about ICTA conference: https://icta.hvu.edu.vn/*
 
 * *Link paper:* 
 
-* *Link datasets:*
+* *Link datasets: https://drive.google.com/file/d/17TEPP0AAHJU86se137nCwxd1e8iOCQa2/view?usp=sharing*
 
 ## Install Hadoop and Spark
 
