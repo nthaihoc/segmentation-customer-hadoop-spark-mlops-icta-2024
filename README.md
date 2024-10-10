@@ -10,7 +10,7 @@
 
 ## Install Hadoop and Spark
 
-First, you need install Hadoop and Spark tools. Follow the two installation instructions below:
+First, you need to install Hadoop and Spark tools. Follow the installation instructions below:
 
 + [Installing latest Hadoop 3.4 on Ubuntu 2024](https://medium.com/@nsidana123/installing-latest-hadoop-3-4-on-ubuntu-2024-easy-installation-guide-874f889fede7)
 
