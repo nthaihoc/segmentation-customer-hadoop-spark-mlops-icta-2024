@@ -81,5 +81,14 @@ For any feedback or comments, please feel free to contact me through the followi
 
 ## Citation
 ```bash
-
+@INPROCEEDINGS{XuanThiTran2018,
+  author={Xuan Thi Tran, Thai Hoc Nguyen},
+  booktitle={The 3rd International Conference on Advances in Information and Communication Technology (ICTA2024)}, 
+  title={An Automatic Machine Learning based Customer Segmentation Model with RFM Analysis}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={},
+  keywords={Machine Learning, RFM model, K-means Clustering},
+  doi={}}
 ```
