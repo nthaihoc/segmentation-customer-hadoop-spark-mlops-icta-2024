@@ -2,7 +2,7 @@
 
 <img src="icta.png" alt="icta" style=auto/>
 
-[Thai Hoc Nguyen*](https://nthaihoc.github.io/about-me/), [Xuan Thi Tran*](https://nthaihoc.github.io/about-me/) (*equal contribution)
+[Thai Hoc Nguyen*](https://nthaihoc.github.io/about-me/), [Xuan Thi Tran*](https://www.facebook.com/profile.php?id=100011111342596) (*equal contribution)
 
 | [ICTA2024](https://icta.hvu.edu.vn/) | [PDF](https://) | [BibTex](https://) | [Datasets](https://) |
 
@@ -75,7 +75,7 @@ $ dvc repro
 ## Contributing
 For any feedback or comments, please feel free to contact me through the following information:
 
-| [email01](mailto:thaihoc.ictu@gmail.com) | [email02](mailto:thaihocit02@gmail.com) |
+| [email_01](mailto:thaihoc.ictu@gmail.com) | [email_02](mailto:ttxuan@ictu.edu.vn:) |
 
 &nbsp;
 
