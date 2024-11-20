@@ -2,9 +2,12 @@
 
 <img src="icta.png" alt="icta" style=auto/>
 
+[Thai Hoc Nguyen*](https://nthaihoc.github.io/about-me/) | [Xuan Thi Tran*](https://nthaihoc.github.io/about-me/) (*equal contribution)
+
+| [PDF](https://) | [BibTex](https://) |
 
 
-
+## Introduction
 
 
 
