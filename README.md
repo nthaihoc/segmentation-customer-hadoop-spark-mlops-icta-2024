@@ -15,6 +15,8 @@ RFM model that refers to the three key features of Recency, Frequency, and Monet
 
 With the continuous growth of generated data, it is crucial to deploy a machine learning based segmenting model in a Big data system. Hadoop and Spark are among best Big data storage and processing technologies. In this study, we propose an automatic, engaged machine learning based customer segmentation solution developed by Spark application framework while costumer data are stored in the HDFS storage. 
 
+&npsp;
+
 ## Environment Setup
 
 ### Install Hadoop and Spark
@@ -54,13 +56,13 @@ There are some important files as `artifacts`, `src` and `dvc.yaml`.
 + `src` include source code of application
 + `dvc.yaml` is a configuration file, supporting automatic command line execution, for building and managing pipelines
 
-See more infomation about `dvc`: https://dvc.org/
+See more infomation about [`dvc`](https://dvc.org/)
 
 <div style="text-align: center;">
     <img src="folder_structure.png" alt="folder structure" style="auto;" />
 </div>
 
-### 5. PipeLine Start
+### PipeLine Start
 
 After successfully installing all the above steps, run the following command to start testing the application.
 
