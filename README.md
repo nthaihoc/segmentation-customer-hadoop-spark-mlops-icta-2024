@@ -1,4 +1,4 @@
-# ICTA 2024: An Automatic Machine Mearning based Customer Segmentation Model with RFM Analysis
+# ICTA 2024: An Automatic Machine Learning based Customer Segmentation Model with RFM Analysis
 
 <img src="icta.png" alt="icta" style=auto/>
 
@@ -15,7 +15,7 @@ RFM model that refers to the three key features of Recency, Frequency, and Monet
 
 With the continuous growth of generated data, it is crucial to deploy a machine learning based segmenting model in a Big data system. Hadoop and Spark are among best Big data storage and processing technologies. In this study, we propose an automatic, engaged machine learning based customer segmentation solution developed by Spark application framework while costumer data are stored in the HDFS storage. 
 
-&npsp;
+&nbsp;
 
 ## Environment Setup
 
@@ -69,6 +69,8 @@ After successfully installing all the above steps, run the following command to 
 ```bash
 $ dvc repro
 ```
+
+&nbsp;
 
 ## Citation
 
