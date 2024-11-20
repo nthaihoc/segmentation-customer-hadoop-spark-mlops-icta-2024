@@ -74,4 +74,12 @@ $ dvc repro
 
 ## Contributing
 For any feedback or comments, please feel free to contact me through the following information:
+
 | [email01](mailto:thaihoc.ictu@gmail.com) | [email02](mailto:thaihocit02@gmail.com) |
+
+&nbsp;
+
+## Citation
+```bash
+
+```
