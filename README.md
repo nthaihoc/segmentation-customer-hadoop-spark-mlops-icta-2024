@@ -9,8 +9,11 @@
 &nbsp;
 
 ## Introduction
+The focus of many companies is to provide the best products and services to attract attention in the market.Each customer has different preferences due to variations in age, gender, and other personal factors. Purchasing behavior is a significant indicator that helps determine customer's preferences. To achieve this, they must find the way to classify customers with similarities into segments. Customer segmentation based on their direct or indirect interaction behavior with the company can be challenging due to the difficulty in selecting key features that highlight the interactions [1](), [2](), [3]().
 
+RFM model that refers to the three key features of Recency, Frequency, and Monetary value has been considered as an effective technique to expose valuable insights of customers' behaviors [4](). Some studies have addressed that applying the K-means algorithm combined with the RFM model can be a promisin solution for customer segmentation [5](), [6](), [7](). 
 
+With the continuous growth of generated data, it is crucial to deploy a machine learning based segmenting model in a Big data system. Hadoop [8]() and Spark [9]() are among best Big data storage and processing technologies. In this study, we propose an automatic, engaged machine learning based customer segmentation solution developed by Spark application framework while costumer data are stored in the HDFS storage. 
 
 
 
